@@ -27,7 +27,7 @@ const salt = bcrypt.genSaltSync(10);
 const secret = JWT_SECRET
 
 console.log('connecting to the db...')
-mongoose.connect(MONGODB_URI)
+mongoose.connect('mongodb+srv://jangirritik06:67QF99Lq@cluster0.3uhimfv.mongodb.net/?retryWrites=true&w=majority')
     .then(() => {
         console.log('db connected.')
 
